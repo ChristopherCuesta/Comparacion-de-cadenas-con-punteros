@@ -5,8 +5,8 @@ int compararChar(char *cadena, char *cadena2, int tamaño){
     {
         if (*cadena == *cadena2)
         {
-            *cadena++;
-            *cadena2++;
+            cadena++;
+            cadena2++;
            
         }else{
             return 0;
