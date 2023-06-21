@@ -18,18 +18,26 @@ int compararChar(char *cadena, char *cadena2, int tamaño){
 
 
 int main(){
-    char cadena[10];
-    char cadena2[10];
-    int tamaño = 10;
-    printf("Introduzca una cadena de no mas de 10 caracteres: ");
+
+    int tamaño = 0;
+
+    printf("\nIntroduzca el tamaño de la cadena de caracteres: ");
+    scanf("%d", &tamaño);
+
+    char cadena[tamaño];
+    char cadena2[tamaño];
+    
+    printf("\nIntroduzca una cadena de no mas de %d caracteres: ",tamaño);
     scanf("%s", cadena);
-    printf("Introdusca otra cadena de no mas de 10 caracteres: ");
+
+    printf("\nIntroduzca otra cadena de no mas de %d caracteres: ",tamaño);
     scanf("%s", cadena2);
+
     if (compararChar(cadena, cadena2, tamaño))
     {
-        printf("Las cadenas son iguales");
+        printf("\nLas cadenas son iguales");
     }else{
-        printf("Las cadenas no son iguales");
+        printf("\nLas cadenas no son iguales");
     }
     
 
